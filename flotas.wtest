@@ -1,0 +1,21 @@
+// flotas.wtest
+import rodados.*
+import dependencia.*
+
+describe "Flotas - Etapa 1" {
+    // si declaro una variable dentro del describe, queda disponible para todos los tests
+    const corsa = new ChevroletCorsa(color = "rojo")
+
+    test "capacidad corsa" {
+        assert.equals(4, corsa.capacidad())
+    }
+
+    test "color del corsa" {
+        assert.equals("rojo", corsa.color())
+    }
+
+    test "velocidad maxima del corsa" {
+        assert.equals(150, corsa.velocidadMaxima())
+      
+    }
+}
